@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { useCases } from "@/lib/constants";
 
