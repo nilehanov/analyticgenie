@@ -29,3 +29,9 @@ npm run lint
 ## Brand
 - Tagline: “Turn data into decisions — instantly.”
 - Personality: intelligent, magical, precise, confident, clean.
+
+## GitHub Pages
+- Static export via `output: "export"` (see `next.config.mjs`).
+- For a project page (e.g. `username.github.io/analytic_genie`), set `NEXT_PUBLIC_BASE_PATH=analytic_genie` during build (already configured in the workflow).
+- Build locally: `NEXT_PUBLIC_BASE_PATH=analytic_genie npm run build` → deploy `out/`.
+- GitHub Action: `.github/workflows/deploy.yml` builds and pushes `out/` to Pages.
