@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const repoName = process.env.NEXT_PUBLIC_BASE_PATH || "";
-const basePath = repoName ? `/${repoName.replace(/^\\//, "")}` : "";
+const normalized = repoName.replace(/^\//, "");
+const basePath = normalized ? `/${normalized}` : "";
 
 const nextConfig = {
   reactStrictMode: true,
