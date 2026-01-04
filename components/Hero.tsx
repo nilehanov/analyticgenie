@@ -37,15 +37,9 @@ export function Hero() {
             <div className="flex flex-wrap items-center gap-4">
               <Link
                 href="mailto:contact@analyticgenie.com"
-                className="rounded-full bg-gradient-to-r from-brand to-sky-400 px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:opacity-95"
-              >
-                contact@analyticgenie.com
-              </Link>
-              <Link
-                href="/product"
                 className="rounded-full border border-border px-6 py-3 text-sm font-semibold text-text-muted transition hover:border-white/40 hover:text-white"
               >
-                See how it works
+                Request a demo
               </Link>
               <span className="text-xs uppercase tracking-[0.2em] text-text-muted">
                 SOC2-ready · Explainable by design

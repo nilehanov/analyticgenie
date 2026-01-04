@@ -31,7 +31,7 @@ export function Footer() {
             href="mailto:contact@analyticgenie.com"
             className="rounded-full border border-border px-4 py-2 text-sm hover:border-white/40 hover:text-white"
           >
-            contact@analyticgenie.com
+            Talk to us
           </Link>
         </div>
       </div>
