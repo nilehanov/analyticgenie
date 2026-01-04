@@ -17,16 +17,10 @@ export function CTA() {
           </div>
           <div className="flex flex-wrap gap-3">
             <Link
-              href="/demo"
+              href="mailto:contact@analyticgenie.com"
               className="rounded-full bg-gradient-to-r from-brand to-sky-400 px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:opacity-95"
             >
-              Request a demo
-            </Link>
-            <Link
-              href="/contact"
-              className="rounded-full border border-border px-6 py-3 text-sm font-semibold text-text-muted transition hover:border-white/40 hover:text-white"
-            >
-              Talk to sales
+              contact@analyticgenie.com
             </Link>
           </div>
         </div>

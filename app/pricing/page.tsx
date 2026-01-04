@@ -37,9 +37,18 @@ export default function PricingPage() {
                 <li key={f}>• {f}</li>
               ))}
             </ul>
-            <button className="mt-6 w-full rounded-full border border-border px-4 py-3 text-sm font-semibold text-white transition hover:border-white/50 hover:bg-white/5">
-              {tier.name === "Enterprise" ? "Talk to sales" : "Start now"}
-            </button>
+            {tier.name === "Enterprise" ? (
+              <a
+                href="mailto:contact@analyticgenie.com"
+                className="mt-6 block w-full rounded-full border border-border px-4 py-3 text-center text-sm font-semibold text-white transition hover:border-white/50 hover:bg-white/5"
+              >
+                contact@analyticgenie.com
+              </a>
+            ) : (
+              <button className="mt-6 w-full rounded-full border border-border px-4 py-3 text-sm font-semibold text-white transition hover:border-white/50 hover:bg-white/5">
+                Start now
+              </button>
+            )}
           </div>
         ))}
       </div>
