@@ -20,7 +20,7 @@ export function CTA() {
               href="mailto:contact@analyticgenie.com"
               className="rounded-full bg-gradient-to-r from-brand to-sky-400 px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:opacity-95"
             >
-              contact@analyticgenie.com
+              Request a demo
             </Link>
           </div>
         </div>
