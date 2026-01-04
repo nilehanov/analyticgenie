@@ -36,10 +36,10 @@ export function Hero() {
             </motion.div>
             <div className="flex flex-wrap items-center gap-4">
               <Link
-                href="/demo"
+                href="mailto:contact@analyticgenie.com"
                 className="rounded-full bg-gradient-to-r from-brand to-sky-400 px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:opacity-95"
               >
-                Request a demo
+                contact@analyticgenie.com
               </Link>
               <Link
                 href="/product"

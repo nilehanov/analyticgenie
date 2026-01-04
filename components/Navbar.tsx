@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { navLinks } from "@/lib/constants";
@@ -13,7 +14,16 @@ export function Navbar() {
     >
       <div className="glass flex items-center justify-between rounded-full px-4 py-3">
         <Link href="/" className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-2xl bg-gradient-to-br from-brand to-sky-400 shadow-glow" />
+          <div className="relative h-10 w-10 overflow-hidden rounded-2xl bg-surface-elevated">
+            <Image
+              src="/images/logo.png"
+              alt="Analytic Genie logo"
+              fill
+              sizes="40px"
+              className="object-contain"
+              priority
+            />
+          </div>
           <div className="leading-tight">
             <p className="text-sm uppercase tracking-[0.2em] text-text-muted">Analytic</p>
             <p className="text-lg font-semibold">Genie</p>
@@ -32,16 +42,10 @@ export function Navbar() {
         </nav>
         <div className="flex items-center gap-3">
           <Link
-            href="/demo"
-            className="hidden rounded-full border border-border px-4 py-2 text-sm text-text-muted transition hover:border-white/40 hover:text-white md:inline-flex"
-          >
-            Request demo
-          </Link>
-          <Link
-            href="/contact"
+            href="mailto:contact@analyticgenie.com"
             className="rounded-full bg-gradient-to-r from-brand to-sky-400 px-4 py-2 text-sm font-semibold text-white shadow-glow transition hover:opacity-95"
           >
-            Talk to us
+            contact@analyticgenie.com
           </Link>
         </div>
       </div>
