@@ -67,14 +67,6 @@ export default function AboutPage() {
               </div>
             </div>
             <div>
-              <p className="text-sm font-semibold text-white mb-2">Education</p>
-              <ul className="space-y-1 text-sm text-text-muted">
-                {founderInfo.education.map((edu) => (
-                  <li key={edu}>• {edu}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
               <p className="text-sm font-semibold text-white mb-2">Background</p>
               <ul className="space-y-1 text-sm text-text-muted">
                 {founderInfo.background.map((item) => (
