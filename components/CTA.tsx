@@ -7,8 +7,8 @@ export function CTA() {
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-semibold text-white">Ready to Work Together?</h2>
         <p className="mt-4 text-text-muted">
-          Contact us to discuss your mission requirements. We are ready to support your 
-          agency with AI, data analytics, and software development expertise.
+          Contact us to discuss your requirements. We are ready to support your 
+          organization with AI, data analytics, and software development expertise.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <Link
@@ -23,13 +23,6 @@ export function CTA() {
           >
             Request Capability Statement
           </a>
-        </div>
-        <div className="mt-8 flex items-center justify-center gap-6 text-xs text-text-muted">
-          <span>UEI: {companyInfo.uei}</span>
-          <span>•</span>
-          <span>CAGE: {companyInfo.cage}</span>
-          <span>•</span>
-          <span>Small Business</span>
         </div>
       </div>
     </section>

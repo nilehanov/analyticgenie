@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { AnimatedBackground } from "./AnimatedBackground";
-import { companyInfo } from "@/lib/constants";
 
 export function Hero() {
   return (
@@ -12,7 +11,7 @@ export function Hero() {
       <div className="relative container-balanced flex flex-col gap-10 pb-20 pt-10">
         <div className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-white/5 px-4 py-2 text-xs text-text-muted">
           <span className="h-2 w-2 rounded-full bg-emerald-400" />
-          Small Business | UEI: {companyInfo.uei} | CAGE: {companyInfo.cage}
+          Small Business | SAM.gov Registered
         </div>
         <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="space-y-8">
@@ -25,13 +24,13 @@ export function Hero() {
               <h1 className="text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
                 AI & Data Analytics
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-sky-400">
-                  {" "}for Federal Missions
+                  {" "}That Deliver Results
                 </span>
               </h1>
               <p className="max-w-2xl text-lg text-text-muted">
-                Analytic Genie delivers artificial intelligence, machine learning, and data analytics 
-                solutions for federal agencies. We help government teams turn complex data into 
-                mission-critical insights.
+                Analytic Genie provides artificial intelligence, machine learning, and data analytics 
+                solutions for government agencies, prime contractors, and enterprises. We turn complex 
+                data into actionable insights.
               </p>
             </motion.div>
             <div className="flex flex-wrap items-center gap-4">

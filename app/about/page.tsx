@@ -7,24 +7,16 @@ export default function AboutPage() {
       {/* Header */}
       <div className="mb-12 space-y-4">
         <p className="text-sm uppercase tracking-[0.2em] text-text-muted">About Us</p>
-        <h1 className="text-4xl font-semibold text-white">Trusted Partner for Federal Missions</h1>
+        <h1 className="text-4xl font-semibold text-white">Trusted Technology Partner</h1>
         <p className="max-w-3xl text-lg text-text-muted">
           Analytic Genie LLC is a Small Business specializing in artificial intelligence, machine learning, 
-          and data analytics solutions for federal government agencies. We combine deep technical expertise 
-          with an understanding of government operations to deliver mission-critical solutions.
+          and data analytics solutions. We serve government agencies, prime contractors, and commercial 
+          enterprises with deep technical expertise and a mission-first approach.
         </p>
       </div>
 
       {/* Company Credentials */}
       <div className="mb-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-        <div className="glass rounded-2xl p-6">
-          <p className="text-sm text-text-muted">Unique Entity ID (UEI)</p>
-          <p className="mt-2 text-2xl font-semibold text-white">{companyInfo.uei}</p>
-        </div>
-        <div className="glass rounded-2xl p-6">
-          <p className="text-sm text-text-muted">CAGE Code</p>
-          <p className="mt-2 text-2xl font-semibold text-white">{companyInfo.cage}</p>
-        </div>
         <div className="glass rounded-2xl p-6">
           <p className="text-sm text-text-muted">Business Type</p>
           <p className="mt-2 text-2xl font-semibold text-white">Small Business</p>
@@ -32,6 +24,14 @@ export default function AboutPage() {
         <div className="glass rounded-2xl p-6">
           <p className="text-sm text-text-muted">SAM.gov Status</p>
           <p className="mt-2 text-2xl font-semibold text-emerald-400">Active</p>
+        </div>
+        <div className="glass rounded-2xl p-6">
+          <p className="text-sm text-text-muted">Experience</p>
+          <p className="mt-2 text-2xl font-semibold text-white">10+ Years</p>
+        </div>
+        <div className="glass rounded-2xl p-6">
+          <p className="text-sm text-text-muted">U.S. Patents</p>
+          <p className="mt-2 text-2xl font-semibold text-white">4 Patents</p>
         </div>
       </div>
 
@@ -48,42 +48,39 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Founder Section */}
+      {/* Leadership Section */}
       <div className="mb-14">
         <h2 className="mb-6 text-2xl font-semibold text-white">Leadership</h2>
         <div className="glass rounded-2xl p-8">
-          <div className="flex flex-col gap-6 md:flex-row md:items-start md:gap-10">
-            <div className="flex-shrink-0">
-              <div className="h-24 w-24 rounded-full bg-gradient-to-br from-brand to-sky-400 flex items-center justify-center">
-                <span className="text-3xl font-bold text-white">NH</span>
+          <div className="space-y-6">
+            <div>
+              <p className="text-xl font-semibold text-brand">{founderInfo.title}</p>
+            </div>
+            <div className="grid gap-6 md:grid-cols-2">
+              <div>
+                <p className="text-sm font-semibold text-white mb-2">Experience</p>
+                <p className="text-sm text-text-muted">{founderInfo.experience}</p>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-white mb-2">Patents</p>
+                <p className="text-sm text-text-muted">{founderInfo.patents}</p>
               </div>
             </div>
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-2xl font-semibold text-white">{founderInfo.name}</h3>
-                <p className="text-brand">{founderInfo.title}</p>
-              </div>
-              <div className="space-y-2 text-sm text-text-muted">
-                <p><strong className="text-white">Experience:</strong> {founderInfo.experience}</p>
-                <p><strong className="text-white">Patents:</strong> {founderInfo.patents}</p>
-                <p><strong className="text-white">Citizenship:</strong> {founderInfo.clearance}</p>
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-white mb-2">Education</p>
-                <ul className="space-y-1 text-sm text-text-muted">
-                  {founderInfo.education.map((edu) => (
-                    <li key={edu}>• {edu}</li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-white mb-2">Background</p>
-                <ul className="space-y-1 text-sm text-text-muted">
-                  {founderInfo.background.map((item) => (
-                    <li key={item}>• {item}</li>
-                  ))}
-                </ul>
-              </div>
+            <div>
+              <p className="text-sm font-semibold text-white mb-2">Education</p>
+              <ul className="space-y-1 text-sm text-text-muted">
+                {founderInfo.education.map((edu) => (
+                  <li key={edu}>• {edu}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-white mb-2">Background</p>
+              <ul className="space-y-1 text-sm text-text-muted">
+                {founderInfo.background.map((item) => (
+                  <li key={item}>• {item}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

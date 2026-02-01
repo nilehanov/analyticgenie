@@ -36,21 +36,6 @@ const technicalCapabilities = [
   }
 ];
 
-const pastPerformance = [
-  {
-    title: "Department of Defense - Boeing Programs",
-    description: "Developed and deployed data analytics and sensor processing systems for multiple defense platforms including F-15, F-18, 737, and 787 programs. Delivered predictive maintenance solutions and real-time telemetry analysis.",
-    technologies: ["Python", "Machine Learning", "Data Analytics", "Sensor Processing"],
-    outcome: "Production systems supporting active defense programs"
-  },
-  {
-    title: "Healthcare Analytics - CVS Health",
-    description: "Built production machine learning systems for healthcare operations, including patient outcome prediction and operational optimization models.",
-    technologies: ["ML/AI", "Healthcare Data", "Production Systems", "HIPAA Compliance"],
-    outcome: "Enterprise-scale ML systems processing millions of records"
-  }
-];
-
 export default function CapabilitiesPage() {
   return (
     <div className="container-balanced py-16">
@@ -60,7 +45,7 @@ export default function CapabilitiesPage() {
         <h1 className="text-4xl font-semibold text-white">Technical Capabilities</h1>
         <p className="max-w-3xl text-lg text-text-muted">
           Deep expertise across the full technology stack—from AI/ML development to cloud infrastructure 
-          and secure software engineering. Our capabilities align with federal contracting requirements.
+          and secure software engineering.
         </p>
       </div>
 
@@ -130,32 +115,6 @@ export default function CapabilitiesPage() {
                   </span>
                 ))}
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Past Performance */}
-      <div className="mb-14">
-        <h2 className="text-2xl font-semibold text-white mb-6">Relevant Experience</h2>
-        <div className="space-y-6">
-          {pastPerformance.map((perf) => (
-            <div key={perf.title} className="glass rounded-2xl p-6">
-              <h3 className="text-xl font-semibold text-white">{perf.title}</h3>
-              <p className="mt-3 text-text-muted">{perf.description}</p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {perf.technologies.map((tech) => (
-                  <span
-                    key={tech}
-                    className="rounded-full bg-brand/10 px-3 py-1 text-xs text-brand"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <p className="mt-4 text-sm text-emerald-400">
-                <strong>Outcome:</strong> {perf.outcome}
-              </p>
             </div>
           ))}
         </div>

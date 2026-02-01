@@ -42,20 +42,20 @@ export const featureCards = [
 
 export const useCases = [
   {
-    title: "Department of Defense",
-    body: "AI/ML solutions for defense platforms, predictive maintenance, sensor analytics, and decision support systems."
+    title: "Federal Agencies",
+    body: "AI/ML solutions, data modernization, DevSecOps, and IT system support for civilian and defense agencies."
   },
   {
-    title: "Veterans Affairs",
-    body: "Healthcare analytics, DevSecOps, data modernization, and IT system support for veteran services."
+    title: "State & Local Government",
+    body: "Data analytics, application development, and cloud solutions for state agencies and municipalities."
   },
   {
-    title: "Intelligence Community",
-    body: "Data integration, NLP, pattern recognition, and secure cloud solutions for mission-critical operations."
+    title: "Prime Contractors",
+    body: "Specialized AI/ML and data engineering support as a subcontractor to large defense and IT primes."
   },
   {
-    title: "Civilian Agencies",
-    body: "Digital transformation, cloud migration, data analytics, and application modernization across federal agencies."
+    title: "Commercial Enterprise",
+    body: "Machine learning systems, data platforms, and cloud infrastructure for enterprise clients."
   }
 ];
 
@@ -77,12 +77,11 @@ export const companyInfo = {
     { code: "D399", description: "IT and Telecom - Other IT Services" }
   ],
   setAsides: ["Small Business"],
-  email: "nile.hanov@analyticgenie.com",
+  email: "contact@analyticgenie.com",
   website: "analyticgenie.com"
 };
 
 export const founderInfo = {
-  name: "Nile Hanov",
   title: "Founder & Principal",
   experience: "10+ years in AI/ML and data analytics",
   patents: "4 U.S. Patents in data analytics and predictive modeling",
@@ -111,7 +110,7 @@ export const steps = [
   },
   {
     title: "Agile Delivery",
-    body: "Iterative development with continuous feedback ensures solutions meet evolving mission requirements.",
+    body: "Iterative development with continuous feedback ensures solutions meet evolving requirements.",
     icon: Timer
   }
 ];
@@ -123,7 +122,7 @@ export const differentiators = [
   },
   {
     title: "Mission-First Approach",
-    description: "We understand government operations. Our solutions are designed for security, compliance, and mission success."
+    description: "We understand government and enterprise operations. Our solutions are designed for security, compliance, and mission success."
   },
   {
     title: "Small Business Agility",
