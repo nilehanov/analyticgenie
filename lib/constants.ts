@@ -44,29 +44,6 @@ export const useCases = [
   }
 ];
 
-export const testimonials = [
-  {
-    name: "Elena Park",
-    title: "VP Product, Northstar",
-    quote:
-      "Analytic Genie became our operating system for decisions. We ship faster because the signals are already there.",
-    metric: "+28% feature adoption"
-  },
-  {
-    name: "Rahul Mehta",
-    title: "Head of Data, Lattice Labs",
-    quote:
-      "The explainability layer is unmatched. Execs trust the AI because every recommendation shows its rationale.",
-    metric: "-35% time-to-insight"
-  },
-  {
-    name: "Maya Chen",
-    title: "COO, Nova Bank",
-    quote:
-      "Compliance loved it. We went from manual reporting to automated, auditable decision flows in weeks.",
-    metric: "99.9% uptime"
-  }
-];
 
 export const steps = [
   {
@@ -122,8 +99,6 @@ export const pricing = [
     ]
   }
 ];
-
-export const logos = ["Aurora Labs", "SignalWave", "Northstar", "Lattice", "Nova Bank", "Cinder"];
 
 export const blogPosts = [
   {

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { AnimatedBackground } from "./AnimatedBackground";
-import { logos } from "@/lib/constants";
 
 export function Hero() {
   return (
@@ -100,16 +99,6 @@ export function Hero() {
               </div>
             </div>
           </motion.div>
-        </div>
-        <div className="flex flex-wrap items-center gap-6 text-xs uppercase tracking-[0.2em] text-text-muted/80">
-          Trusted by teams shipping the future
-          <div className="flex flex-wrap items-center gap-4 text-sm font-semibold text-white/80">
-            {logos.map((logo) => (
-              <span key={logo} className="rounded-full border border-border/80 px-3 py-1">
-                {logo}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </section>
