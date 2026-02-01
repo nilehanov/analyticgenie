@@ -85,14 +85,10 @@ export const founderInfo = {
   title: "Founder & Principal",
   experience: "10+ years in AI/ML and data analytics",
   patents: "4 U.S. Patents in data analytics and predictive modeling",
-  education: [
-    "M.S. Computer Science (Machine Learning/AI) - UC Irvine",
-    "B.S. Computer Engineering - Rensselaer Polytechnic Institute"
-  ],
   background: [
-    "Department of Defense platforms at Boeing (F-15, F-18, 737, 787 programs)",
-    "Production ML systems at CVS Health",
-    "Enterprise AI solutions across healthcare and defense sectors"
+    "Production ML systems for defense and aerospace programs",
+    "Enterprise AI solutions for healthcare and government sectors",
+    "End-to-end data platform development and deployment"
   ],
   clearance: "U.S. Citizen"
 };
@@ -130,7 +126,7 @@ export const differentiators = [
   },
   {
     title: "Proven Track Record",
-    description: "Experience supporting DoD programs at Boeing with documented success in complex system development."
+    description: "Experience supporting defense programs with documented success in complex system development."
   }
 ];
 
