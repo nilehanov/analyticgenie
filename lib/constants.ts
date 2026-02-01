@@ -1,123 +1,157 @@
-import { Brain, BarChart3, Sparkles, ShieldCheck, Timer, Workflow } from "lucide-react";
+import { Brain, BarChart3, Sparkles, ShieldCheck, Timer, Workflow, Cloud, Code, Database, Lock, Cpu, LineChart } from "lucide-react";
 
 export const navLinks = [
-  { href: "/product", label: "Product" },
-  { href: "/pricing", label: "Pricing" },
+  { href: "/services", label: "Services" },
+  { href: "/capabilities", label: "Capabilities" },
   { href: "/about", label: "About" },
-  { href: "/blog", label: "Blog" }
+  { href: "/contact", label: "Contact" }
 ];
 
 export const featureCards = [
   {
-    title: "AI-powered insights",
-    description: "Understand patterns, anomalies, and drivers with explainable AI tuned for decisions.",
+    title: "AI & Machine Learning",
+    description: "Custom ML models, predictive analytics, NLP, computer vision, and GenAI solutions for mission-critical applications.",
     icon: Brain
   },
   {
-    title: "Real-time analytics",
-    description: "Stream metrics from your stack and surface what matters in milliseconds.",
+    title: "Data Analytics & Engineering",
+    description: "Data pipelines, warehousing, visualization, and business intelligence to transform raw data into actionable insights.",
     icon: BarChart3
   },
   {
-    title: "Decision automation",
-    description: "Close the loop with playbooks that trigger actions when thresholds or trends emerge.",
-    icon: Workflow
+    title: "Cloud & DevSecOps",
+    description: "Secure cloud architecture on AWS, Azure, and GCP with CI/CD pipelines, containerization, and infrastructure as code.",
+    icon: Cloud
+  },
+  {
+    title: "Software Development",
+    description: "Full-stack application development using modern frameworks, APIs, microservices, and agile methodologies.",
+    icon: Code
+  },
+  {
+    title: "Cybersecurity",
+    description: "Security assessments, compliance frameworks, vulnerability management, and secure system design.",
+    icon: Lock
+  },
+  {
+    title: "Systems Engineering",
+    description: "Requirements analysis, system design, integration, testing, and technical documentation for complex systems.",
+    icon: Cpu
   }
 ];
 
 export const useCases = [
   {
-    title: "Founders",
-    body: "Board-ready dashboards, growth levers, and crisp summaries for every investor update."
+    title: "Department of Defense",
+    body: "AI/ML solutions for defense platforms, predictive maintenance, sensor analytics, and decision support systems."
   },
   {
-    title: "Product teams",
-    body: "Ship smarter with feature impact analysis, user journeys, and release health signals."
+    title: "Veterans Affairs",
+    body: "Healthcare analytics, DevSecOps, data modernization, and IT system support for veteran services."
   },
   {
-    title: "Data teams",
-    body: "Automate monitoring, enforce data contracts, and deploy insights without new pipelines."
+    title: "Intelligence Community",
+    body: "Data integration, NLP, pattern recognition, and secure cloud solutions for mission-critical operations."
   },
   {
-    title: "Enterprises",
-    body: "Governance-ready, SOC2-aligned controls with auditability and privacy by design."
+    title: "Civilian Agencies",
+    body: "Digital transformation, cloud migration, data analytics, and application modernization across federal agencies."
   }
 ];
 
+export const companyInfo = {
+  name: "Analytic Genie LLC",
+  uei: "SJNRUTHBNPY5",
+  cage: "185K1",
+  naicsCodes: [
+    { code: "541511", description: "Custom Computer Programming Services" },
+    { code: "541512", description: "Computer Systems Design Services" },
+    { code: "541513", description: "Computer Facilities Management Services" },
+    { code: "541519", description: "Other Computer Related Services" },
+    { code: "518210", description: "Data Processing, Hosting & Related Services" },
+    { code: "541715", description: "R&D in Physical, Engineering, and Life Sciences" }
+  ],
+  pscCodes: [
+    { code: "DA01", description: "IT and Telecom - Application Development Support" },
+    { code: "DF01", description: "IT and Telecom - IT Management Support Services" },
+    { code: "D399", description: "IT and Telecom - Other IT Services" }
+  ],
+  setAsides: ["Small Business"],
+  email: "nile.hanov@analyticgenie.com",
+  website: "analyticgenie.com"
+};
+
+export const founderInfo = {
+  name: "Nile Hanov",
+  title: "Founder & Principal",
+  experience: "10+ years in AI/ML and data analytics",
+  patents: "4 U.S. Patents in data analytics and predictive modeling",
+  education: [
+    "M.S. Computer Science (Machine Learning/AI) - UC Irvine",
+    "B.S. Computer Engineering - Rensselaer Polytechnic Institute"
+  ],
+  background: [
+    "Department of Defense platforms at Boeing (F-15, F-18, 737, 787 programs)",
+    "Production ML systems at CVS Health",
+    "Enterprise AI solutions across healthcare and defense sectors"
+  ],
+  clearance: "U.S. Citizen"
+};
 
 export const steps = [
   {
-    title: "Connect data",
-    body: "Secure connectors for warehouses, product analytics, CRMs, and event streams.",
+    title: "Requirements Analysis",
+    body: "We work closely with your team to understand mission needs, technical requirements, and success criteria.",
     icon: ShieldCheck
   },
   {
-    title: "Genie analyzes",
-    body: "Adaptive AI agents map your business model, detect patterns, and benchmark performance.",
+    title: "Solution Design",
+    body: "Our experts architect scalable, secure solutions leveraging proven technologies and best practices.",
     icon: Sparkles
   },
   {
-    title: "Insights delivered",
-    body: "Concise briefs, alerts, and automations delivered where teams already work.",
+    title: "Agile Delivery",
+    body: "Iterative development with continuous feedback ensures solutions meet evolving mission requirements.",
     icon: Timer
   }
 ];
 
-export const pricing = [
+export const differentiators = [
   {
-    name: "Starter",
-    price: "$39",
-    cadence: "per seat / mo",
-    features: [
-      "Up to 5 workspaces",
-      "Core dashboards",
-      "Slack + email alerts",
-      "Basic connectors"
-    ]
+    title: "Deep Technical Expertise",
+    description: "4 U.S. Patents in data analytics. 10+ years building production AI/ML systems for defense and healthcare."
   },
   {
-    name: "Growth",
-    price: "$89",
-    cadence: "per seat / mo",
-    features: [
-      "Unlimited workspaces",
-      "Automations & playbooks",
-      "Advanced roles & SSO",
-      "Priority support"
-    ],
-    highlight: true
+    title: "Mission-First Approach",
+    description: "We understand government operations. Our solutions are designed for security, compliance, and mission success."
   },
   {
-    name: "Enterprise",
-    price: "Let’s talk",
-    cadence: "custom",
-    features: [
-      "Dedicated VPC or on-prem",
-      "Custom SLAs & DPA",
-      "Fine-grained governance",
-      "White-glove onboarding"
-    ]
+    title: "Small Business Agility",
+    description: "Direct access to senior technical leadership. Rapid response. No layers of bureaucracy."
+  },
+  {
+    title: "Proven Track Record",
+    description: "Experience supporting DoD programs at Boeing with documented success in complex system development."
   }
 ];
 
 export const blogPosts = [
   {
-    title: "Designing AI for high-stakes decisions",
+    title: "AI/ML Best Practices for Government",
     tag: "AI Strategy",
-    description: "A framework for explainability, guardrails, and human-in-the-loop controls.",
+    description: "Implementing explainable, auditable AI systems that meet federal compliance requirements.",
     href: "#"
   },
   {
-    title: "From dashboards to decisions",
-    tag: "Product",
-    description: "Why actionability beats vanity metrics — and how to measure what matters.",
+    title: "DevSecOps for Federal Agencies",
+    tag: "Cloud",
+    description: "Building secure CI/CD pipelines and achieving ATO in cloud environments.",
     href: "#"
   },
   {
-    title: "Building trust with enterprise data teams",
-    tag: "Security",
-    description: "Our approach to privacy, governance, and alignment with SOC2 controls.",
+    title: "Data Modernization Roadmap",
+    tag: "Data",
+    description: "Strategies for migrating legacy systems to modern cloud-native architectures.",
     href: "#"
   }
 ];
-

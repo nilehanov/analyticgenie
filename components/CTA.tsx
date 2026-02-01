@@ -1,31 +1,37 @@
 import Link from "next/link";
+import { companyInfo } from "@/lib/constants";
 
 export function CTA() {
   return (
-    <section className="container-balanced py-16">
-      <div className="glass relative overflow-hidden rounded-3xl border border-border px-8 py-10 md:px-12">
-        <div className="absolute inset-0 bg-radial-glow opacity-60" />
-        <div className="relative flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <div className="space-y-2">
-            <p className="text-sm uppercase tracking-[0.2em] text-text-muted">Ready to move</p>
-            <h3 className="text-2xl font-semibold text-white">
-              See how Analytic Genie changes your next decision.
-            </h3>
-            <p className="max-w-xl text-text-muted">
-              Get a tailored walkthrough for your stack, KPIs, and governance requirements.
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-3">
-            <Link
-              href="mailto:contact@analyticgenie.com"
-              className="rounded-full bg-gradient-to-r from-brand to-sky-400 px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:opacity-95"
-            >
-              Request a demo
-            </Link>
-          </div>
+    <section className="mt-16 rounded-3xl border border-border bg-gradient-to-br from-surface-elevated/80 to-surface-elevated/40 p-10">
+      <div className="mx-auto max-w-2xl text-center">
+        <h2 className="text-3xl font-semibold text-white">Ready to Work Together?</h2>
+        <p className="mt-4 text-text-muted">
+          Contact us to discuss your mission requirements. We are ready to support your 
+          agency with AI, data analytics, and software development expertise.
+        </p>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <Link
+            href="/contact"
+            className="rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand/90"
+          >
+            Contact Us
+          </Link>
+          <a
+            href={`mailto:${companyInfo.email}?subject=Capability Statement Request`}
+            className="rounded-full border border-border px-6 py-3 text-sm font-semibold text-text-muted transition hover:border-white/40 hover:text-white"
+          >
+            Request Capability Statement
+          </a>
+        </div>
+        <div className="mt-8 flex items-center justify-center gap-6 text-xs text-text-muted">
+          <span>UEI: {companyInfo.uei}</span>
+          <span>•</span>
+          <span>CAGE: {companyInfo.cage}</span>
+          <span>•</span>
+          <span>Small Business</span>
         </div>
       </div>
     </section>
   );
 }
-

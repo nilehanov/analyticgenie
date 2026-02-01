@@ -6,32 +6,29 @@ import { useCases } from "@/lib/constants";
 export function UseCases() {
   return (
     <section className="container-balanced py-16">
-      <div className="mb-8 flex flex-col gap-3">
-        <p className="text-sm uppercase tracking-[0.2em] text-text-muted">Use cases</p>
-        <h2 className="text-3xl font-semibold text-white">Built for every team</h2>
+      <div className="mb-10 flex flex-col gap-3">
+        <p className="text-sm uppercase tracking-[0.2em] text-text-muted">Who We Serve</p>
+        <h2 className="text-3xl font-semibold text-white">Federal Agencies & DoD</h2>
         <p className="max-w-2xl text-text-muted">
-          Analytic Genie adapts to your operating model — from early-stage focus to enterprise scale.
+          We understand the unique requirements of government operations—security, compliance, 
+          and mission-critical reliability. Our solutions are designed for federal environments.
         </p>
       </div>
       <div className="grid gap-6 md:grid-cols-2">
-        {useCases.map((item, idx) => (
+        {useCases.map((useCase, idx) => (
           <motion.div
-            key={item.title}
-            initial={{ opacity: 0, y: 18 }}
+            key={useCase.title}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: idx * 0.07, duration: 0.35 }}
+            transition={{ delay: idx * 0.05, duration: 0.35 }}
             className="glass rounded-2xl p-6"
           >
-            <div className="flex items-center justify-between">
-              <h3 className="text-xl font-semibold text-white">{item.title}</h3>
-              <span className="text-xs uppercase tracking-[0.2em] text-text-muted">Focus</span>
-            </div>
-            <p className="mt-3 text-sm leading-relaxed text-text-muted">{item.body}</p>
+            <h3 className="text-xl font-semibold text-white">{useCase.title}</h3>
+            <p className="mt-3 text-sm text-text-muted leading-relaxed">{useCase.body}</p>
           </motion.div>
         ))}
       </div>
     </section>
   );
 }
-
