@@ -50,9 +50,6 @@ export function Footer() {
                 <a href={`mailto:${companyInfo.email}`} className="transition hover:text-white">
                   {companyInfo.email}
                 </a>
-                <a href={`https://${companyInfo.website}`} className="transition hover:text-white">
-                  {companyInfo.website}
-                </a>
               </div>
             </div>
           </div>

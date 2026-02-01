@@ -29,16 +29,6 @@ export default function ContactPage() {
               </a>
             </div>
 
-            <div>
-              <p className="text-sm text-text-muted">Website</p>
-              <a 
-                href={`https://${companyInfo.website}`}
-                className="text-xl font-semibold text-white mt-1 hover:text-brand transition"
-              >
-                {companyInfo.website}
-              </a>
-            </div>
-
             <div className="pt-4 border-t border-border">
               <p className="text-sm text-text-muted mb-3">Company Details</p>
               <p className="text-white font-semibold">{companyInfo.name}</p>
